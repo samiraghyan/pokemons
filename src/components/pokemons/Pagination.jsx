@@ -1,15 +1,10 @@
-
-
-    /**
- * Created by Min on 2017/2/9.
- */
 import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react';
 
 
 
 @inject('pokemons') @observer
-export default class Pagination extends Component {
+class Pagination extends Component {
 
     changeOnPage = (ev) => {
       const {  setItemsOnPage } = this.props.pokemons;
@@ -17,13 +12,13 @@ export default class Pagination extends Component {
     }
 
     onNext = (ev) => {
-      ev.preventDefault()
+      ev.preventDefault();
       const {  nextPage } = this.props.pokemons;
       nextPage( ) 
     }
 
     onBack = (ev) => {
-      ev.preventDefault()
+      ev.preventDefault();
       const {  previousPage } = this.props.pokemons;
       previousPage(  ) 
     }
@@ -55,5 +50,5 @@ export default class Pagination extends Component {
         );
     }
 }
-
+export default Pagination
 

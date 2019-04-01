@@ -1,11 +1,10 @@
-import { observer } from 'mobx-react';
+import {inject}             from 'mobx-react';
 import React, { Component } from 'react';
-import Search from './components/pokemons/Search';
-import PokemonList from './components/pokemons/PokemonList';
+import Search               from './components/pokemons/Search';
+import PokemonList          from './components/pokemons/PokemonList';
 
-@observer
-export default class Main extends Component {
-
+@inject('pokemons')
+class Main extends Component {
 
     render() {
         return (
@@ -23,3 +22,4 @@ export default class Main extends Component {
         );
     }
 }
+export default Main

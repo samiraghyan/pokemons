@@ -1,34 +1,17 @@
-import React from 'react'
-import { Match } from 'react-router'
-import { Provider } from 'mobx-react'
-import { observer, inject } from 'mobx-react';
-import Main from "./main"
+import React            from 'react'
+import {Provider}       from 'mobx-react'
+import Main             from "./main"
+import Pokemons         from './store/pokemons'
+
+const pokemons = new Pokemons();
 
 class App extends React.Component {
     render() {
-        const { stores } = this.props
-
-
-        // Wrapping with provider gives children access to stores
-        return (<Provider {...stores}>
-            <LoadableWrapper/>
-        </Provider>)
+        return <Provider pokemons={pokemons}>
+                     <Main/>
+                </Provider>
     }
 }
-
-@inject('pokemons')
-@observer
-class LoadableWrapper extends React.Component {
-
-    render() {
-        return (
-                <div>
-                    <Match exactly pattern="/" component={Main}/>
-                </div>
-        )
-    }
-}
-
 
 
 export default App
