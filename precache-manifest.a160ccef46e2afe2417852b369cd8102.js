@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/pokemons/static/js/runtime~main.c2a0dfef.js"
   },
   {
-    "revision": "916e9609c4ac080b8b89",
-    "url": "/pokemons/static/js/main.e2bd6788.chunk.js"
+    "revision": "7b00756bf4bf90fcb481",
+    "url": "/pokemons/static/js/main.244489f7.chunk.js"
   },
   {
     "revision": "e5aaaa6e1c46085e0a63",
     "url": "/pokemons/static/js/2.dad00c54.chunk.js"
   },
   {
-    "revision": "916e9609c4ac080b8b89",
+    "revision": "7b00756bf4bf90fcb481",
     "url": "/pokemons/static/css/main.d599de59.chunk.css"
   },
   {
-    "revision": "ad7a81072851e0dbbdec982902d02d70",
+    "revision": "76ef429cb293c82a72f39a5d97ad6d26",
     "url": "/pokemons/index.html"
   }
 ];
